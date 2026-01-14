@@ -1,0 +1,116 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact • AdVantage‑Multi‑Platform‑Campaign‑Management‑Mobile‑Web‑App</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config (optional – enable glassmorphism utilities) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            glass: "rgba(255,255,255,0.25)",
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Inline style for glass effect fallback (if needed) -->
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 flex flex-col items-center">
+
+  <!-- Header / Hero Banner Placeholder -->
+  <header class="w-full py-8 flex flex-col items-center">
+    <h1 class="text-4xl font-extrabold text-gray-800 mb-4">AdVantage</h1>
+    <p class="text-lg text-gray-600">Multi‑Platform Campaign Management Mobile &amp; Web App</p>
+
+    <!-- Badges (copied from README) -->
+    <div class="mt-6 flex flex-wrap gap-2 justify-center">
+      <a href="https://github.com/chirag127/AdVantage-Multi-Platform-Campaign-Management-Mobile-Web-App/actions/workflows/ci.yml"
+        target="_blank"
+        class="inline-block">
+        <img src="https://img.shields.io/github/actions/workflow/status/chirag127/AdVantage-Multi-Platform-Campaign-Management-Mobile-Web-App/ci.yml?label=CI%20Status&message=passing&color=brightgreen&style=flat-square"
+          alt="CI Status" />
+      </a>
+      <img src="https://img.shields.io/codecov/c/github/chirag127/AdVantage-Multi-Platform-Campaign-Management-Mobile-Web-App?label=Coverage&color=brightgreen&style=flat-square"
+        alt="Code Coverage" />
+    </div>
+  </header>
+
+  <!-- Main Contact Card -->
+  <main class="flex-1 w-full max-w-2xl px-4 flex flex-col items-center">
+    <section class="glass w-full p-8 md:p-12 shadow-lg">
+      <h2 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Get in Touch</h2>
+
+      <p class="text-gray-700 text-center mb-8">
+        Have a question, feedback or just want to say hello? Feel free to reach out!
+      </p>
+
+      <!-- Email -->
+      <div class="flex items-center justify-center mb-6">
+        <a href="mailto:chiragsinghal127@gmail.com"
+          class="flex items-center space-x-2 text-lg font-medium text-indigo-700 hover:text-indigo-900 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M16 12H8m8 0l-4 4m0-8l-4 4" />
+          </svg>
+          <span>chiragsinghal127@gmail.com</span>
+        </a>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex justify-center space-x-6">
+        <a href="https://github.com/chirag127" target="_blank"
+          class="text-gray-600 hover:text-gray-900 transition transform hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M12 2C6.477 2 2 6.484 2 12.014c0 4.418 2.865 8.166 6.839 9.49.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.464-1.11-1.464-.907-.62.069-.607.069-.607 1.003.07 1.531 1.032 1.531 1.032 .892 1.527 2.341 1.086 2.91.831 .09-.647 .35-1.086 .636-1.336-2.22-.253-4.555-1.112-4.555-4.945 0-1.093 .39-1.987 1.028-2.688-.103-.253-.447-1.27 .098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.852.004 1.71.115 2.51.337 1.909-1.294 2.748-1.025 2.748-1.025 .546 1.377 .202 2.394 .1 2.647 .64 .701 1.027 1.595 1.027 2.688 0 3.842-2.339 4.688-4.566 4.936 .359 .31 .678 .923 .678 1.86 0 1.342-.012 2.424-.012 2.752 0 .269 .18 .58 .688 .482A10.018 10.018 0 0022 12.014C22 6.484 17.523 2 12 2z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <a href="https://linkedin.com/in/chirag-singhal1" target="_blank"
+          class="text-gray-600 hover:text-gray-900 transition transform hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-1.31-.025-3-1.825-3-1.825 0-2.105 1.425-2.105 2.9v5.6h-3v-10h2.875v1.367h.04c.4-.757 1.375-1.55 2.83-1.55 3.025 0 3.585 1.992 3.585 4.582v5.601z"/>
+          </svg>
+        </a>
+
+        <a href="https://buymeacoffee.com/WhyIsWhen" target="_blank"
+          class="text-gray-600 hover:text-gray-900 transition transform hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24"
+            fill="currentColor">
+            <path d="M12 2c-4.418 0-8 3.582-8 8 0 4.418 3.582 8 8 8s8-3.582 8-8c0-4.418-3.582-8-8-8zm-1 12h-2v-6h2v6zm4 0h-2v-6h2v6z"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-6 text-center text-sm text-gray-600 bg-white/30 backdrop-blur-md">
+    © 2026 Chirag Singhal | Designed by Chirag Singhal
+  </footer>
+</body>
+</html>
+```
